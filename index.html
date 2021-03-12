@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+
+    <!-- Link para pegar o estilo CSS dos servidores do bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .tm-social{
+            width: 50px;
+            height:50px;
+        }
+    </style>
+
+</head>
+<body class="bg-light"> 
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Ação</a>
+                <a class="dropdown-item" href="#">Outra ação</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Algo mais aqui</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+        </div>
+    </nav>
+    <!-- /Menu -->
+
+    <div class="text-center">
+        <img src="assets/img/viagens.png" class="img-fluid" alt="Imagem responsiva">
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Viajar Te Deixa Sem Palavras – Depois Lhe Transforma Em Um Contador De Histórias</h1>
+            
+            <p class="lead p-3">Quem não gosta de ouvir uma boa e velha história enquanto está sentando no bar com os amigos. As histórias loucas de uma viagem, sempre são as melhores! Comece agora a juntar as suas histórias e pare de viver a dos outros!</p>
+           <p class="p-2"></p>
+        </div>
+
+        <div class=" bg-info text-white">
+            <div class="container">
+                <h1 class="display-4 text-center p-5">Dicas para um Viajante</h1>
+                <h3>1. Esta serve para quase tudo na vida: defina prioridades</h3>
+                <p class="lead">Mochileiro digno do posto vai precisar montar um orçamento econômico, depois olhar de novo para ele e fazer cortes – até transformá-lo em um orçamento hipereconômico.
+                Na hora desse doloroso ajuste, é importante saber do que você não abre mão de jeito nenhum. Há quem valorize mais a alimentação, tem quem não aceite dormir em quarto sem banheiro ou ar-condicionado. Definir onde dói menos facilita o facão.</p>
+
+                <h3>2. Balanceie os seus gastos</h3>
+                <p class="lead">MUm bom jeito de começar o planejamento financeiro de um mochilão é escolher uma hospedagem em cada destino que satisfaça minimamente as suas necessidades e cotar o custo médio da diária.
+                Se o valor não cabe no orçamento, reduza a duração da viagem ou diminua as expectativas migrando para uma acomodação mais barata. A mesma lógica se aplica para estimar gastos com passeios ou transporte. Feito isso, dá para ter noção do gasto médio por dia.</p>
+
+                <h3>3. Pesquise a melhor época para visitar o destino escolhido</h3>
+                <p class="lead">Na ânsia de poupar tostões, mochileiros amadores são chegados em fazer economias pouco sábias. De que adianta pagar pouco em um hostel pé na areia se a tarifa baratinha só é válida no período chuvoso?
+                Fugir da alta temporada é sempre boa ideia, mas cuidado para não ir parar em lugares com pinta de cenários pós-apocalípticos.</p>
+
+                <h3>4. Reserve com antecedência</h3>
+                <p class="lead">É importante pesar os prós e os contras de viajar sem reservas de hospedagem e passagens: você ganha pontos em liberdade, mas perde em economia – reservar com boa antecedência geralmente garante melhores tarifas.</p>
+
+                <h3>5. Desacelere</h3>
+                <p class="lead">Ficar pouco tempo nos destinos, na ânsia de ver o maior número de lugares possível na mesma viagem, pode resultar em uma viagem apressada, cansativa e mais cara – o excesso de deslocamentos pode aumentar muito os gastos.
+                Considere pelo menos duas noites em cada cidade para manter um ritmo confortável e seja generoso com grandes metrópoles, em que geralmente é possível passar semanas e ainda sair com a sensação de que faltou tempo.                    
+                Na hora de montar o roteiro, encaixe bate e voltas a lugares que ficam até duas horas das bases e que podem ser visitados em uma tarde.</p>
+
+                <p class="p-2"></p>
+            </div>           
+        </div>
+
+
+        <div class="container">
+            <!-- Carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/img/Baia-do-Sancho-copia.jpg" alt="Primeiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Baía do Sancho, Fernando de Noronha, Pernambuco</h5>
+                            <p>Considerada um dos melhores pontos do Brasil para mergulhos livres, a Baía do Sancho possui águas cristalinas e é rodeada por bancos de corais. O acesso é a partir de um penhasco que oferece uma vista sensacional.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/Gales-de-Maragogi-copia.jpg" alt="Segundo Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Galés de Maragogi, Maragogi, Alagoas</h5>
+                            <p>As Galés são piscinas naturais próximas a orla de Maragogi. Ao todo são três áreas: as Galés principais, as piscinas das Toacas e Barra Grande. É possível conhecer as três em um passeio de barco. No entanto, as preferidas dos visitantes são as Galés Principais.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/Prainhas-do-Pontal-copia.jpg" alt="Terceiro Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Prainhas do Pontal de Atalaia, Arraial do Cabo, Rio de Janeiro
+                            </h5>
+                            <p>As prainhas, separadas por rochas, são acessadas por uma escadaria com vista privilegiada. Elas estão localizadas no Morro do Pontal do Atalaia. Dependendo do período do dia a cor da água pode ser diferente, variando do verde ao azul.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/img/12_sp26-copia.jpg" alt="Quarto Slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Praia do Cedro, Ubatuba</h5>
+                            <p>Uma das praias mais lindas da cidade do litoral norte de São Paulo se mantém preservada por causa da dificuldade de acesso. É preciso encarar 40 minutos de trilha a partir da Praia Grande do Bonete, ou a partir do canto direito da praia da Fortaleza.</p>
+                          </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+            <!-- /Carousel -->
+            
+            <!-- Grupo de Cards -->
+            <div class="card-deck p-5">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/spiaggia-bianca-boracay_d.jpg.image.648.487.high.webp" alt="Imagem de capa do card">
+                    <div class="card-body">
+                    <h5 class="card-title">Praia Branca de Boracay - Filipinas</h5>
+                    <p class="card-text">As belas praias filipinas são conhecidas no mundo, em particular aquelas na ilha de Boracay, um verdadeiro paraíso. </p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/spiagge-isola-khao-phing-kan_d.jpg.image.648.487.high.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                    <h5 class="card-title">Praias da Ilha de Khao Phing Kan - Tailândia</h5>
+                    <p class="card-text">Na Tailândia, há a última pérola desta viagem que nos permitiu tocar praias mágicas e cheias de charme, como as que você encontrará na Ilha de Khao Phing Kan.</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/spiaggia-padang-padang_d.jpg.image.648.487.high.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                    <h5 class="card-title">Praia de Padang Padang - Bali</h5>
+                    <p class="card-text">Padang Padang é definitivamente uma das praias de Bali mais bonitas e populares. As razões são simples: a beleza desta baía é incomparável.</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    </div>
+                </div> 
+            </div>     
+            <div class="card-deck p-5">
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/spiaggia-bianca-boracay_d.jpg.image.648.487.high.webp" alt="Imagem de capa do card">
+                    <div class="card-body">
+                    <h5 class="card-title">Playa del Carmen - México</h5>
+                    <p class="card-text">Quem nunca pensou: "Vamos fazer umas férias entre as praias do México". Com a Costa Cruzeiros você pode chegar a Playa del Carmen.  </p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/seven-mile-beach_d.jpg.image.648.487.high.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                    <h5 class="card-title">Seven Mile Beach (Grand Cayman)</h5>
+                    <p class="card-text">Nesta joia pública que pode ser percorrida inteiramente a pé, você encontrará um mar excepcional com areias paradisíacas, além dos melhores resorts e hotéis de toda a região.</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/img/ocho-rios_d.jpg.image.648.487.high.jpg" alt="Imagem de capa do card">
+                    <div class="card-body">
+                    <h5 class="card-title">Ocho Rios - Jamaica</h5>
+                    <p class="card-text">cho Rios, uma popular estância balnear no norte da ilha. Uma vila de pescadores que ao longo dos anos conseguiu se transformar e fascinar os turistas.</p>
+                    <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+                    </div>
+                </div>
+            </div>         
+            <!-- /Grupo de Cards --> 
+        </div>
+    </div>
+    <!-- /Jumbotron --> 
+
+    
+    
+
+    <!-- Footer -->
+    <hr>
+    <footer>
+        <div class="container text-center">
+            <a target="_blank" href="https://www.linkedin.com/in/igor-milhomens/"><img class="tm-social" src="assets/img/linkedin.png" alt="Logo Linkedin"></a>
+            <a target="_blank" href="https://github.com/igorMilhomens/igorMilhomens"><img class="tm-social" src="assets/img/github.png" alt="Logo GitHub"></a>
+                
+        </div>
+        <p class="center text-center">
+            Todos os direitos reservados: Igor Milhomens &copy
+        </p>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
