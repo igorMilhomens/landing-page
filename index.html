@@ -13,14 +13,18 @@
             width: 50px;
             height:50px;
         }
+        html{
+            scroll-behavior: smooth;
+        }
+
     </style>
 
 </head>
 <body class="bg-light"> 
 
     <!-- Menu -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg  navbar-dark  bg-dark fixed-top" >
+        <a class="navbar-brand" href="#"><img class="tm-social" src="assets/img/logoAzul.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,50 +32,50 @@
         <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link text-info" href="#home">Home <span class="sr-only">(página atual)</span></a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
+              <a class="nav-link dropdown-toggle text-info" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Seção
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Ação</a>
-                <a class="dropdown-item" href="#">Outra ação</a>
+              <div class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-info" href="#dicas">Dicas</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Algo mais aqui</a>
+                <a class="dropdown-item text-info" href="#brasil">Brasil</a>
+                <a class="dropdown-item text-info" href="#exterior">Exterior</a>
               </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Desativado</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+            <!-- Botão para acionar modalLogin -->
+            <button class="btn btn-outline-info my-2 my-sm-0 mr-2" type="submit" data-toggle="modal" data-target="#modalLogin">Login</button>
+             <!-- Botão para acionar modalCadastrar -->
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit"data-toggle="modal" data-target="#modalCadastrar">Cadastre-se</button>
           </form>
         </div>
     </nav>
     <!-- /Menu -->
-
-    <div class="text-center">
-        <img src="assets/img/viagens.png" class="img-fluid" alt="Imagem responsiva">
-    </div>
-
+    
+    
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
+    
+
+    <div id="home" class="jumbotron jumbotron-fluid">
+        
+        <div  class="text-center mt-2" id="home">
+            <img src="assets/img/viagens.png" class="img-fluid" alt="Imagem responsiva">
+        </div>
+
         <div class="container">
             <h1 class="display-4">Viajar Te Deixa Sem Palavras – Depois Lhe Transforma Em Um Contador De Histórias</h1>
             
             <p class="lead p-3">Quem não gosta de ouvir uma boa e velha história enquanto está sentando no bar com os amigos. As histórias loucas de uma viagem, sempre são as melhores! Comece agora a juntar as suas histórias e pare de viver a dos outros!</p>
-           <p class="p-2"></p>
-        </div>
+           <p class="p-2" id="dicas"></p>
+        </div >
 
         <div class=" bg-info text-white">
             <div class="container">
-                <h1 class="display-4 text-center p-5">Dicas para um Viajante</h1>
+                <h1 class="display-4 text-center p-5" >Dicas para um Viajante</h1>
                 <h3>1. Esta serve para quase tudo na vida: defina prioridades</h3>
                 <p class="lead">Mochileiro digno do posto vai precisar montar um orçamento econômico, depois olhar de novo para ele e fazer cortes – até transformá-lo em um orçamento hipereconômico.
                 Na hora desse doloroso ajuste, é importante saber do que você não abre mão de jeito nenhum. Há quem valorize mais a alimentação, tem quem não aceite dormir em quarto sem banheiro ou ar-condicionado. Definir onde dói menos facilita o facão.</p>
@@ -92,12 +96,15 @@
                 Considere pelo menos duas noites em cada cidade para manter um ritmo confortável e seja generoso com grandes metrópoles, em que geralmente é possível passar semanas e ainda sair com a sensação de que faltou tempo.                    
                 Na hora de montar o roteiro, encaixe bate e voltas a lugares que ficam até duas horas das bases e que podem ser visitados em uma tarde.</p>
 
-                <p class="p-2"></p>
+                <p class="p-2" id="brasil"></p>
             </div>           
         </div>
 
+        <div ></div>
+        <div class="container" >
+            <h1 class="text-center text-dark p-5" >Destinos no Brasil</h1>
 
-        <div class="container">
+            
             <!-- Carousel -->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -147,10 +154,16 @@
                 </a>
             </div>
             <!-- /Carousel -->
-            
+
+            <div class="d-flex justify-content-center mt-5" >
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/yAlbT9n8uow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            </div>
+            <div id="exterior" class="p-4"><p></p></div>
+        
+            <h1 class="text-center text-dark mt-1">Destinos Internacionais</h1>
             <!-- Grupo de Cards -->
             <div class="card-deck p-5">
-                <div class="card">
+                <div class="card ">
                     <img class="card-img-top" src="assets/img/spiaggia-bianca-boracay_d.jpg.image.648.487.high.webp" alt="Imagem de capa do card">
                     <div class="card-body">
                     <h5 class="card-title">Praia Branca de Boracay - Filipinas</h5>
@@ -205,16 +218,85 @@
         </div>
     </div>
     <!-- /Jumbotron --> 
+  
+    <!-- ModalLogin -->
+    <div class="modal fade " id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-dark text-info">
+            <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Login</h5>
+            <button type="button" class="close text-info" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="email" class=" text-white">Endereço de email:</label>
+                    <input type="email" class="form-control bg-dark text-info" id="exampleFormControlInput1">
+                </div>
 
-    
-    
-
+                <div class="form-group">
+                    <label for="senha" class="  text-white">Senha:</label><br>
+                    <input type="password" class="form-control bg-dark text-info" id="senha" placeholder="Senha">
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-info" data-dismiss="modal">Salvar Login</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- /ModalLogin -->
+    <!-- ModalCadastrar -->
+    <div class="modal fade " id="modalCadastrar" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+        <div class="modal-content bg-dark text-info">
+            <div class="modal-header">
+            <h5 class="modal-title" id="TituloModalCentralizado">Cadastre-se</h5>
+            <button type="button" class="close text-info" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div>
+                        <label for="nome" class=" text-white">Nome Completo:</label><br>
+                        <input type="text" id="nome" class="form-control bg-dark text-info" >
+                        <div id="txtNome"></div>
+                    </div>
+                    
+                    
+                    <div class="form-group">
+                        <label for="email" class=" text-white">Endereço de email:</label>
+                        <input type="email" class="form-control bg-dark text-info" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+                    </div>
+                    
+                    <label for="senha" class=" text-white">Senha:</label><br>
+                    <input type="password" class="form-control bg-dark text-info" id="senha" >
+                    <div id="txtSenha"></div>
+                    
+                    <label for="confirmaSenha" class=" text-white">Confirme sua Senha:</label><br>
+                    <input type="password" class="form-control bg-dark text-info" id="confirmaSenha">
+                    <div id="txtConfirmaSenha"></div>
+                    
+                    
+                </form>
+            </div>
+            <div class="modal-footer ">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-info" data-dismiss="modal">Salvar Cadastro</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- /ModalCadastrar -->
     <!-- Footer -->
     <hr>
     <footer>
         <div class="container text-center">
             <a target="_blank" href="https://www.linkedin.com/in/igor-milhomens/"><img class="tm-social" src="assets/img/linkedin.png" alt="Logo Linkedin"></a>
-            <a target="_blank" href="https://github.com/igorMilhomens/igorMilhomens"><img class="tm-social" src="assets/img/github.png" alt="Logo GitHub"></a>
+            <a target="_blank" href="https://github.com/igorMilhomens"><img class="tm-social" src="assets/img/github.png" alt="Logo GitHub"></a>
                 
         </div>
         <p class="center text-center">
